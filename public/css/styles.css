@@ -1,0 +1,26 @@
+body {
+	padding-top: 5rem;
+}
+
+#aba_logo {
+	padding-left: 12px;
+	padding-bottom: 12px;
+}
+
+#logo {
+	height: 36px;
+}
+
+#selection {
+	height: 150px;
+	padding-top: 6px;
+}
+
+.navbar {
+	padding: 0 1rem;
+}
+
+.search-button {
+	color: #fe1313;
+    border-color: #fe1313;
+}
