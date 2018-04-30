@@ -2,7 +2,16 @@ body {
 	padding-top: 5rem;
 }
 
+.home {
+	display: flex;
+	justify-content: center;
+}
+
 #aba_logo {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-left: 12px;
 	padding-bottom: 12px;
 }
@@ -12,8 +21,13 @@ body {
 }
 
 #selection {
-	height: 150px;
+	/*height: 150px;*/
 	padding-top: 6px;
+}
+
+.error {
+	/*font-size: 0.8em;*/
+	color: red;
 }
 
 .navbar {
@@ -23,4 +37,177 @@ body {
 .search-button {
 	color: #fe1313;
     border-color: #fe1313;
+}
+
+/*Multiple drop-down menu*/
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu a::after{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    margin-top: -30px;
+    left: 100%;
+}
+
+/*@media (max-width: 992px) {
+    .dropdown-menu{
+        width: 50%;
+    }
+    .dropdown-menu .dropdown-submenu{
+        width: auto;
+    }
+}*/
+
+.first_row {
+  font-size: 3em;	
+  /*display: flex;  */
+  width:100%;
+}
+
+#team_home {	
+  float: left;
+  /*display: flex;  */
+}
+
+#team_away {	
+  float: right;
+  /*display: flex;  */
+}
+
+#score_middle {
+  width: 25%;
+  margin: 0 auto;
+  /*display: flex;*/
+  text-align: center;
+}
+
+.info {
+	height: 8em;
+	margin-top: 15px;
+}
+
+#info_left {	
+  float: left;
+  width: 50%;
+  text-align: center;
+  /*display: flex;  */
+}
+
+#info_right {	
+  float: left;
+  width: 50%;
+  text-align: center;
+  /*display: flex;  */
+}
+
+td.right {
+	text-align: right;
+}
+
+td:first-child {
+	font-weight: 500;
+	text-align: left;	
+	width: 220px;
+}
+
+tr:first-child {
+	background-color: #F2F2F2;
+	text-align: center;		
+}
+
+
+.stats tr:last-child {
+	font-weight: 600;
+}
+
+.amp {
+	font-weight: 600;
+	font-style: italic;
+}
+
+#standings tr td:nth-child(2) {
+	text-align: left;
+}
+
+#standings tr td:first-child {
+	width: auto;
+	text-align: center;
+}
+
+#avg {
+	font-size: 2.5em;	
+}
+
+
+#player-avg tr td:first-child {
+	font-weight: 300;
+	width: auto;
+	text-align: center;
+}
+
+.team-stats tr:nth-last-child(-n+2) {
+	font-weight: 600;
+	background-color: #DFE2E6 !important;
+}
+
+.team-stats td:first-child {	
+	width: 120px;
+}
+
+.game-stats tr:last-child {
+	font-weight: 600;
+	background-color: #DFE2E6 !important;	
+}
+
+.stats-header {
+	background-color: #C5C5C5 !important;
+	font-weight: 700;
+	text-align: center;		
+}
+
+.second-header {
+	font-weight: 700 !important;	
+	width: auto !important;
+	text-align: center !important;		
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}    
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;	
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  margin-top: 2rem;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }
